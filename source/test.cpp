@@ -2,10 +2,9 @@
 
 #include "KUNI_graph.hpp"
 #include "KUNI_random.hpp"
+#include <gtest/gtest.h>
 
-int main() {
-    KUNI::graph::hello();
-    std::cout << "A super random number: " << KUNI::random::random() << '\n';
-
-    std::exit(EXIT_SUCCESS);
+TEST(graph_test, addition) {
+    auto expected = 4;
+    EXPECT_EQ(expected, KUNI::graph::add_numbers(1, 3));
 }

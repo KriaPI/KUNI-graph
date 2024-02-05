@@ -12,6 +12,11 @@ To compile the code, change the directory to the project root (where README.md i
     cd builddir
     meson compile
 
+To run tests:
+
+    cd builddir
+    meson test
+
 To run clang tidy, or clang-format (assuming those are installed):
 
     cd builddir

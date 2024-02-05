@@ -1,5 +1,5 @@
 namespace KUNI {
 namespace random {
-int random() { return 42; }
+auto random() -> int { return 42; }
 }  // namespace random
 }  // namespace KUNI

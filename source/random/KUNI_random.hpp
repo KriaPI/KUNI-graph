@@ -2,6 +2,6 @@
 
 namespace KUNI {
 namespace random {
-int random();
+auto random() -> int;
 }
 }  // namespace KUNI
