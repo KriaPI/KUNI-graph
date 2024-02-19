@@ -1,8 +1,11 @@
 #pragma once
 
-namespace KUNI {
-namespace graph {
-void hello();
-auto add_numbers(int a, int b) -> int;
+#include <cstddef>
+
+namespace KUNI::graph {
+    class Adjacency_list_based_graph {
+        
+        public:
+        auto size() const noexcept -> std::size_t;
+    };
 }
-}  // namespace KUNI

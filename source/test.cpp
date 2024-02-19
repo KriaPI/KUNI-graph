@@ -4,7 +4,9 @@
 #include "KUNI_random.hpp"
 #include <gtest/gtest.h>
 
-TEST(graph_test, addition) {
-    auto expected = 4;
-    EXPECT_EQ(expected, KUNI::graph::add_numbers(1, 3));
+TEST(adjacency_list_based, size) {
+    auto graph {KUNI::graph::Adjacency_list_based_graph()};
+    constexpr auto expected {0};
+    
+    EXPECT_EQ(expected, graph.size());
 }
