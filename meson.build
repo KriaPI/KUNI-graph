@@ -7,7 +7,6 @@ gtest_dependency = gtest_subproject.get_variable('gtest_main_dep')
 
 KUNI_include_path = include_directories('source/include')
 KUNI_graph = library('KUNI_graph', [
-    'source/graph/KUNI_graph.cpp',
     'source/graph/adjacency_list.cpp'
     ], 
     include_directories: KUNI_include_path
