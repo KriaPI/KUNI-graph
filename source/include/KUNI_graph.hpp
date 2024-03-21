@@ -32,8 +32,28 @@ namespace KUNI::graph {
             m_nodes {nodes}, m_graph {graph}
         {}
 
+        /// @brief Retrieve the number of nodes within the graph.
+        /// @return The number of nodes within the graph.
         [[nodiscard]] auto node_count() const noexcept -> std::size_t;
+
+        /// @brief Number of directed edges the graph contains. 
+        /// @return The number of directed edges.
         [[nodiscard]] auto edge_count() const noexcept -> std::size_t;
+
+        /// @brief Retrieve the value of the node at `index`.
+        /// @param index Index of the node within the vector of nodes defined during construction of the graph.
+        /// @return The value of the node at `index`.
         [[nodiscard]] auto node_value(std::size_t index) const -> node_type; 
+
+        /// @brief Check if there exists an edge from one node to another.
+        /// @param from Index of the node where the edge starts.
+        /// @param to Index of the node where the edge ends.
+        /// @return True if an edge exists, false if the edge does not exist.
+        [[nodiscard]] auto has_edge(std::size_t from, std::size_t to) const -> bool;
+
+        /// @brief Check if there exists any edge from the given node with index `from` to any other node.
+        /// @param from Index of node where an edge should begin.
+        /// @return True if an edge exists, false if no edge exists.
+        [[nodiscard]] auto has_any_edge(std::size_t from) const -> bool;
     };
 }

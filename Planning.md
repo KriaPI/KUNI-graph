@@ -10,12 +10,12 @@ A graph is stored as a set of adjacency lists or an adjacency matrix where each 
 Errors should be caught during compile time with static assertions or with exceptions. 
 
 ## Operations
-* Retrieve edge count
-* Retrieve node count
-* Retrieve node given its index
-* Check if an edge exists from a node to another
-* Check if a node has any edges
-* Breadth-first search
+* Retrieve edge count (done)
+* Retrieve node count (done)
+* Retrieve node given its index (done)
+* Check if an edge exists from a node to another (done)
+* Check if a node has any edges (done)
+* Breadth-first search 
 * Depth-first search
 
 ### Retrieve edge count
